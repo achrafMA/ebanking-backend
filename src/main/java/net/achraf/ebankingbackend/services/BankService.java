@@ -1,12 +1,13 @@
 package net.achraf.ebankingbackend.services;
 
-import jakarta.transaction.Transactional;
+
 import net.achraf.ebankingbackend.entities.BankAccount;
 import net.achraf.ebankingbackend.entities.CurrentAccount;
 import net.achraf.ebankingbackend.entities.SavingAccount;
 import net.achraf.ebankingbackend.repositories.BankAccountRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
